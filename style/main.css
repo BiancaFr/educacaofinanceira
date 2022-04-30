@@ -1,0 +1,63 @@
+:root {
+    --white: #EFFFFD;
+    --cream: #FFF6EA;
+    --kindablack: #222831;
+}
+
+body {
+    font-family: monospace;
+}
+
+
+header .logo {
+
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    font-family: helvetica;
+}
+
+li {
+    list-style: circle;
+}
+
+.list {
+    list-style: square;
+}
+
+#msg {
+    font-family: monospace;
+}
+
+.light-theme {
+    color: #222831;
+    background: #FFF6EA;
+    --btnBg: var(--kindablack);
+    --btnFontColor: var(--white);
+}
+
+.dark-theme {
+    color: #EFFFFD;
+    background: #222831;
+    --btnBg: var(--cream);
+    --btnFontColor: var(--kindablack);
+}
+
+.btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    height: 30px;
+    width: 60px;
+    border-radius: 30%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+
+    .btn:focus {
+        outline-style: none;
+    }
+
+}
